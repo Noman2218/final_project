@@ -1,11 +1,11 @@
-.body {
+body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
-.nav {
+nav {
     background-color: #ffffff !important;
     padding: 0.5em;
     height: 75px;
@@ -19,11 +19,11 @@
 
 .navbar-items{
     text-align: right;
-    top: -31px;
+    top: -13px;
     position: relative;
     padding: 5px;
 }
-.nav a {
+nav a {
     color: #000000;
     text-decoration: none;
     padding: 0.5em 1em;
@@ -31,7 +31,7 @@
     position: relative;
 }
 
-.nav a:hover {
+nav a:hover {
     background-color: #555;
 }
 
