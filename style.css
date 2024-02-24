@@ -35,6 +35,47 @@ nav a:hover {
     background-color: #555;
 }
 
-.header{
-    background-color: aqua;
-}
+header {
+    color: #fff;
+    padding: 4em;
+    background-color:#17a2b8;
+  
+    h2 a {
+      font-size: x-large;
+      text-decoration: none;
+      color: #FEA116;
+    }
+  
+    h1 {
+      animation: fadeInDown;
+      /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 2s;
+      /* don't forget to set a duration! */
+      margin-bottom: 1px;
+      margin-left: 89px;
+      font-size: 70px;
+    }
+  
+    p {
+      margin-left: 89px;
+      line-height: 40px;
+    }
+  
+  
+  }
+  
+  .animated-picture {
+    animation: fadeIn;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s;
+    /* don't forget to set a duration! */
+    margin: auto;
+    margin-bottom: -460px;
+    margin-right: 40px;
+    padding-bottom: 71px;
+    display: flex;
+    justify-content: right;
+    top: -390px;
+    position: relative;
+  
+  }
