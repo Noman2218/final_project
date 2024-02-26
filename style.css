@@ -100,8 +100,8 @@ header {
   top: -390px;
   position: relative;
 
-}
-.total-cards{
+ }
+/* .total-cards{
   width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -110,18 +110,8 @@ header {
     margin-right: auto;
     margin-left: auto;
 }
-.crad-rows{
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-.icon-setting{
-  color: #17a2b8 !important;
-    font-weight: 400 !important;
-    margin-bottom: 1rem !important;
-    font-size: 2.5rem;
-}
+
+
 .card-setting{
   padding: 30px;
   margin-bottom: 1.5rem !important;
@@ -131,24 +121,42 @@ header {
   border-top: 1px solid #dee2e6 !important;
   background-color: #f8f9fa !important;
   box-sizing: border-box;
-}
-/* 
-.card {
-  margin: 10px;
-  position: relative;
-  top: 50px;
-  right: -143px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 20%;
+}  */
+
+.icon-setting{
+  color: #17a2b8 !important;
+    font-weight: 400 !important;
+    margin-bottom: 1rem !important;
+    font-size: 2.5rem;
 }
 
 .card-table {
   animation: fadeInUp;
   display: flex;
+  justify-content: center;
+  padding-top: 3rem;
 }
+.card {
+  margin: 1.5rem;
+  padding: 30px;
+  margin-bottom: 1.5rem !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex !important;
+  border-radius: 5px !important;
+  border-top: 1px solid #dee2e6 !important;
+  background-color: #f8f9fa !important;
+  box-sizing: border-box;
+}
+
+.crad-rows{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
 
 .card:hover {
   color: #FEA116;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-} */
+} 
