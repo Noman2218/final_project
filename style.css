@@ -66,8 +66,8 @@ header {
 }
 
 .header-learn-more {
+  text-decoration: none;
   margin-left: 89px;
-  display: inline-block;
   font-weight: 400;
   color: #fff;
   background-color: #00394f;
@@ -82,8 +82,6 @@ header {
   padding-bottom: 1rem !important;
   cursor: pointer;
   text-align: center;
-  vertical-align: middle;
-  text-decoration: none;
 }
 
 .animated-picture {
@@ -95,39 +93,18 @@ header {
   margin-bottom: -460px;
   margin-right: 40px;
   padding-bottom: 71px;
-  display: flex;
-  justify-content: right;
+  display: table;
+  justify-content: right !important;
   top: -390px;
   position: relative;
 
- }
-/* .total-cards{
-  width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-top: 3rem !important;
-    padding-bottom: 1rem !important;
-    margin-right: auto;
-    margin-left: auto;
 }
 
-
-.card-setting{
-  padding: 30px;
-  margin-bottom: 1.5rem !important;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-  display: flex !important;
-  border-radius: 5px !important;
-  border-top: 1px solid #dee2e6 !important;
-  background-color: #f8f9fa !important;
-  box-sizing: border-box;
-}  */
-
-.icon-setting{
+.icon-setting {
   color: #17a2b8 !important;
-    font-weight: 400 !important;
-    margin-bottom: 1rem !important;
-    font-size: 2.5rem;
+  font-weight: 400 !important;
+  margin-bottom: 1rem !important;
+  font-size: 2.5rem;
 }
 
 .card-table {
@@ -136,6 +113,7 @@ header {
   justify-content: center;
   padding-top: 3rem;
 }
+
 .card {
   margin: 1.5rem;
   padding: 30px;
@@ -148,7 +126,7 @@ header {
   box-sizing: border-box;
 }
 
-.crad-rows{
+.crad-rows {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
@@ -159,4 +137,60 @@ header {
 .card:hover {
   color: #FEA116;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-} 
+}
+
+.index-about {
+  display: flex;
+  justify-content: center;
+  padding-right: 15px;
+  padding-left: 173px;
+  flex-wrap: wrap;
+  padding-top: 45px;
+}
+
+.row-align-items {
+  display: flex;
+}
+
+.index-about-text-align {
+  padding-top: 30px;
+  padding-left: 45px;
+}
+
+.index-about-text {
+  display: flex;
+}
+
+.index-learn-more,
+.index-learn-more a {
+  text-decoration: none;
+  color: #fff;
+  /* Ensure the desired color is specified */
+}
+
+.index-learn-more {
+  margin-top: 15px;
+  background-color: #00394f;
+  border-color: #00394f;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 1rem 3rem;
+  /* Shortened padding shorthand */
+  cursor: pointer;
+  text-align: center;
+}
+.list-inline {
+  list-style: none; 
+}
+
+.list-inline li {
+  display: flex; 
+  align-items: center; 
+  line-height: 2; 
+}
+
+.list-inline li img {
+  margin-right: 10px; 
+}
