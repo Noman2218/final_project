@@ -194,3 +194,191 @@ header {
 .list-inline li img {
   margin-right: 10px; 
 }
+
+.h5 {
+  text-align: center;
+  font-size: 30px;
+margin-bottom: 0px;
+  color: #17a2b8;
+}
+
+h2 {
+  margin: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 40px;
+  ;
+}
+.Classes{
+  display: flex;
+  margin: 15px;
+  justify-content: center;
+}
+
+
+.classes-card {
+  margin: 15px;
+  width: 300px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+.classes-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+.classes-card h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+.classes-card p {
+  font-size: 1rem;
+  color: #555;
+}
+.btn-join {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.btn-join:hover {
+  background-color: #0056b3;
+}
+
+.classe-booking-text{
+justify-content: left;
+position: relative;
+}
+
+
+
+.form-container {
+  margin-top: 45px;
+  position: relative;
+  right: -757px;
+  background-color: #17a2b8 ;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input,
+select,
+textarea {
+  border-radius: 10px;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+}
+
+.book-seat-button {
+    background-color: #00394f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+footer {
+  background-color: #00394f ;
+  color: #fff;
+  padding: 20px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer h2 {
+  color: #17a2b8 ;
+  margin: 20px;
+}
+
+.nav-shortcuts {
+  line-height: 28px;
+  margin: 28px;
+}
+
+.nav-shortcuts-2 {
+  line-height: 28px;
+  margin: 28px;
+  top: -25px;
+  position: relative;
+}
+
+.nav-shortcuts-3 {
+  line-height: 28px;
+  margin: 28px;
+  top: -12px;
+  position: relative;
+}
+
+.nav-shortcuts-4 {
+  line-height: 28px;
+  margin: 28px;
+  top: -37px;
+  position: relative;
+}
+
+.nav-shortcuts-5 {
+  line-height: 28px;
+  margin: 63px;
+  top: -35px;
+  display: flex;
+  position: relative;
+}
+
+.nav-shortcuts-5-div-2 {
+  display: flex;
+  margin: 5px;
+  right: -500px;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-shortcuts-5-div-1 {
+  margin: 5px;
+  position: relative;
+  text-decoration: none;
+}
+
+footer>table {
+  margin: 40px;
+  ;
+}
+
