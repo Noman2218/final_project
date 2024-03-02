@@ -19,11 +19,26 @@ nav {
 }
 
 .navbar-items {
-  text-align: right;
-  top: -13px;
+  top :-30px;
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center; /* Align items vertically */
   position: relative;
   padding: 5px;
 }
+
+
+.join-class-button{
+text-decoration: none;
+    background-color: #17a2b8;
+    color: #fff;
+    padding: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;}
 
 nav a {
   color: #000000;
@@ -99,6 +114,13 @@ header {
   position: relative;
 
 }
+@media (max-width: 768px) {
+  .animated-picture>img{
+  margin-top: 436px;
+  display: flex;
+  flex-direction: column;
+}
+}
 
 .icon-setting {
   color: #17a2b8 !important;
@@ -151,6 +173,10 @@ header {
 
 .row-align-items {
   display: flex;
+}
+
+@media(max-width: 768px) {
+ 
 }
 
 .index-about-text-align {
@@ -370,110 +396,86 @@ button:hover {
 /* testomonial start */
 
 /* .testimonial-card */
-.Testimonials{
+
+
+
+.Testimonials {
   display: flex;
+  flex-wrap: wrap; /* Wrap items onto multiple rows if needed */
+  justify-content: space-between; /* Evenly space cards horizontally */
+  margin: 96px 10px auto; /* Center the section horizontally */
+  padding: 20px; /* Add some padding for better spacing */
 }
 
-
-
-.container-2-div {
-  display: flex;
-  border: none;
-  background: none;
-  text-align: left;
-  margin-bottom: 10px;
-  /* Adjust the margin between items */
-  cursor: pointer;
-}
-.container-2-div > div >h6 {
-  font-size: 25px;
-  margin: 10px;
-}
-.container-2-div > div >small {
-  font-size: 18px;
-  margin: 10px;
-}
 .testimonial-card {
-  margin: 50px;
+  margin: 4px;
   position: relative;
-  top: 80px;
-  right: -14px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 20%;
+  width: 30%; /* Adjust width as needed for different layouts */
+  flex: 1; /* Allow cards to shrink proportionally on smaller screens */
 }
 
-.testimonial-card-2 {
-  margin: 50px;
-  position: relative;
-  top: 80px;
-  right: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 20%;
-}
-.testimonial-card-3 {
-  margin: 50px;
-  position: relative;
-  top: 80px;
-  right: 60px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 20%;
-}
-.testimonial-card-4 {
-  margin: 50px;
-  position: relative;
-  top: 80px;
-  right: 80px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 20%;
+.testimonial-card img {
+  width: 100%; /* Use full width of card for the avatar */
+ 
 }
 
+.container-2 {
+  padding: 15px; /* Add padding for content within the card */
+}
 
 .container-2-div {
-  display: flex;
-  border: none;
-  background: none;
-  text-align: left;
-  margin-bottom: 10px;
-  /* Adjust the margin between items */
-  cursor: pointer;
+  display: flex; /* Arrange name and icon horizontally */
+  align-items: center; /* Vertically align name and icon */
+  margin-top: 10px; /* Add space between the content and image */
 }
-.container-2-div > div >h6 {
-  font-size: 25px;
-  margin: 10px;
+
+.container-2-div div:first-child {
+  margin-right: 10px; /* Add spacing between icon and text */
 }
-.container-2-div > div >small {
-  font-size: 18px;
-  margin: 10px;
+
+.testimonial-card h6 {
+  font-weight: bold; /* Make name bold */
+  margin-bottom: 5px; /* Add space between name and profession */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 480px) {
+  .testimonial-card {
+    width: 100%; /* Make cards take up full width on very small screens */
+  }
 }
 
 /* testimonial end */
 
 /* go top button */
-/* Style the button */
+
 #goTopBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #4CAF50; /* Green background */
-  color: white; /* White text */
-  cursor: pointer; /* Add a pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
+  display: none; 
+  position: fixed; 
+  bottom: 20px;
+  right: 30px; 
+  z-index: 99;
+  border: none; 
+  outline: none; 
+  background-color: #17a2b8;
+  color: white;
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 7px; 
 }
 
 #goTopBtn:hover {
-  background-color: #45a049; /* Darker green on hover */
+  transition: 0.3s;
+  background-color: #2192a3; 
 }
-/* go top button end */
 
+/* go top button end */
 footer {
   background-color: #00394f;
   color: #fff;
@@ -495,55 +497,57 @@ footer h2 {
   margin: 20px;
 }
 
-.nav-shortcuts {
-  line-height: 28px;
-  margin: 28px;
+
+footer {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  align-items: baseline;
 }
 
-.nav-shortcuts-2 {
-  line-height: 28px;
-  margin: 28px;
-  top: -25px;
-  position: relative;
-}
-
-.nav-shortcuts-3 {
-  line-height: 28px;
-  margin: 28px;
-  top: -12px;
-  position: relative;
-}
-
+.nav-shortcuts,
+.nav-shortcuts-2,
+.nav-shortcuts-3,
 .nav-shortcuts-4 {
+  flex: 1; 
   line-height: 28px;
-  margin: 28px;
-  top: -37px;
-  position: relative;
+  margin: 10px; 
+  
 }
 
 .nav-shortcuts-5 {
-  line-height: 28px;
-  margin: 63px;
-  top: -35px;
-  display: flex;
-  position: relative;
+ 
+  margin: 10px;
+  padding: 10px;
+  display: flex; 
+  justify-content: space-between;
 }
 
+.nav-shortcuts-5-div-1,
 .nav-shortcuts-5-div-2 {
-  display: flex;
-  margin: 5px;
-  right: -500px;
-  position: relative;
+  flex: 1; 
   text-decoration: none;
 }
 
-.nav-shortcuts-5-div-1 {
-  margin: 5px;
-  position: relative;
-  text-decoration: none;
+
+footer > table {
+  margin: 0; 
 }
 
-footer>table {
-  margin: 40px;
-  ;
+
+@media (max-width: 768px) {
+  .nav-shortcuts,
+  .nav-shortcuts-2,
+  .nav-shortcuts-3,
+  .nav-shortcuts-4 {
+    flex: auto; 
+  }
+
+  .row-align-items{
+    display: block;
+  }
+
+  .testimonial-card {
+    width: 50%; /* Adjust width for smaller screens */
+  }
 }
