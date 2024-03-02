@@ -51,76 +51,61 @@ nav a {
 nav a:hover {
   background-color: #555;
 }
+.header {
+  background-color:#17a2b8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
 
-header {
-  color: #fff;
-  padding: 4em;
-  background-color: #17a2b8;
+.header-content {
+  max-width: 50rem;
+}
 
-  h2 a {
-    font-size: x-large;
-    text-decoration: none;
-    color: #FEA116;
-  }
+.header-content h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
 
-  h1 {
-    animation: fadeInDown;
-    /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s;
-    /* don't forget to set a duration! */
-    margin-bottom: 1px;
-    margin-left: 89px;
-    font-size: 70px;
-  }
-
-  p {
-    margin-left: 89px;
-    line-height: 40px;
-  }
-
+.header-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 .header-learn-more {
+  display: inline-block;
+  background-color:#00394f;
+  color: white;
+  padding: 1rem 2rem;
   text-decoration: none;
-  margin-left: 89px;
-  font-weight: 400;
-  color: #fff;
-  background-color: #00394f;
-  border-color: #00394f;
-  font-size: 1rem;
-  line-height: 1.5;
-  border: 1px solid transparent;
-  border-radius: 30px;
-  padding-left: 3rem !important;
-  padding-right: 3rem !important;
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
-  cursor: pointer;
-  text-align: center;
+  border-radius: 3rem;
+  transition: background-color 0.3s ease;
 }
 
-.animated-picture {
-  animation: fadeIn;
-  /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 5s;
-  /* don't forget to set a duration! */
-  margin: auto;
-  margin-bottom: -460px;
-  margin-right: 40px;
-  padding-bottom: 71px;
-  display: table;
-  justify-content: right !important;
-  top: -390px;
-  position: relative;
-
+.header-learn-more:hover {
+  background-color: #0a8fd1;
 }
+
 @media (max-width: 768px) {
-  .animated-picture>img{
-  margin-top: 436px;
-  display: flex;
-  flex-direction: column;
+  .header-content {
+    max-width: 100%;
+  }
+
+  .header-content h1 {
+    font-size: 2rem;
+  }
+
+  .header-content p {
+    font-size: 1rem;
+  }
+
+  .header-learn-more {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
 }
-}
+
 
 .icon-setting {
   color: #17a2b8 !important;

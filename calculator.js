@@ -1,50 +1,3 @@
-// timer
-
-var msecCounter = 0;
-var secCounter = 0;
-var minCounter = 0;
-
-var min = document.getElementById("min");
-var sec = document.getElementById("sec");
-var msec = document.getElementById("msec");
-var counter = 0;
-var interval;
-
-function timer() {
-  msecCounter++;
-  msec.innerHTML = msecCounter;
-  console.log(msecCounter);
-  if (msecCounter === 100) {
-    secCounter++;
-    sec.innerHTML = secCounter;
-    msecCounter = 0;
-    if (secCounter === 5) {
-      secCounter = 0;
-      minCounter++;
-      min.innerHTML = minCounter;
-    }
-  }
-}
-
-function startTimer() {
-  // e.disabled = true
-  interval = setInterval(timer, 20);
-}
-
-function stopTimer() {
-  clearInterval(interval);
-}
-
-function resetTimer() {
-  clearInterval(interval);
-
-  min.innerHTML = "00";
-  sec.innerHTML = "00";
-  msec.innerHTML = "00";
-  secCounter = 0;
-  minCounter = 0;
-  msecCounter = 0;
-}
 // Calculator
 const display = document.querySelector(".display");
 const buttons = document.querySelectorAll("button");
@@ -74,3 +27,30 @@ buttons.forEach((button) => {
   //Button click listener calls calculate() with dataset value as argument.
   button.addEventListener("click", (e) => calculate(e.target.dataset.value));
 });
+
+// go top button 
+
+
+
+var mybutton = document.getElementById("goTopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function goToTop() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
+
+
+
+
